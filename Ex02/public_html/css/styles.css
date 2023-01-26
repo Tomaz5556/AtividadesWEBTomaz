@@ -1,0 +1,88 @@
+body {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: gainsboro;
+}
+
+nav {
+    color: white;
+}
+
+ul {
+    border-left: 5px black;
+    background-color: #cccccc;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: #dddddd;
+}
+
+a:active {
+    color: #aaaaaa;
+}
+
+h1 {
+    text-align: center;
+    color: gray;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+div {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    padding: 10px;
+}
+
+iframe {
+    padding: 20px;
+}
+
+table {
+    font-size: 18px;
+}
+
+input[type=text] {
+    font-size: 18px;
+    width: 30%;
+    padding: 20px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    width: 30%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-size: 18px;
+    color: gray;
+    background-color: #aaaaaa;
+}
