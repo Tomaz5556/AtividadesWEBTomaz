@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metralhadoras</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="modal position-fixed" tabindex="-1" id="modal-sobre" data-bs-backdrop="static">
+            <div class="d-flex modal-dialog font-verdana">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sobre</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body overflow-x-auto justify-content-center">
+                        <p>
+                            O WS Resource foi iniciado em 2023. É um site com bibliotecas de 
+                            sons de armas vasta e facilmente acessível para download imediato.
+                        </p>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Versão</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Autor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>Criação do Site</td>
+                                    <td>Tomaz</td>
+                                </tr>
+                                <tr>
+                                    <td>1.1</td>
+                                    <td>Adicionando Elementos</td>
+                                    <td>Tomaz</td>
+                                </tr>
+                                <tr>
+                                    <td>1.2</td>
+                                    <td>Editando Fontes e Páginas</td>
+                                    <td>Tomaz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Copyright &copy; 2023<p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+            <div class="d-flex container-fluid font-verdana">
+                <a class="navbar-brand mx-auto">
+                    <img src="images/1.png" alt="imagem-logo" width="30" height="24">
+                    <b>WS Resource</b>
+                </a>
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="espingarda.html"><b>Espingardas</b></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="metralhadora.html"><b>Metralhadoras</b></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="pistola.html"><b>Pistolas</b></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="rifle.html"><b>Rifles</b></a>
+                        </li> 
+                    </ul>
+                    <form class="my-2 my-lg-0">
+                        <button type="button" class="btn btn-outline-dark my-2 my-sm-0" onclick="mostrar_modal()"><b>Sobre</b></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="d-grid ratio ratio-16x9">
+                <iframe class="ratio" src="https://www.youtube.com/embed/dfkhc3Zzxxw"></iframe>
+            </div>
+        </div>
+        <div class="d-grid px-4 py-5 text-center bg-primary-subtle font-georgia">
+            <h3 class="fw-bold">AK47/AK74 Sons</h3>
+            <div class="col-lg-6 mx-auto">
+                <a class="btn btn-dark mb-4" href="https://mediafire.com/" role="button"><h3><b>Download File</b></h3></a>
+            </div>
+        </div>
+        <footer class="p-4 text-white bg-dark">
+            <div class="d-lg-flex justify-content-between font-arial">
+                <div class="container-lg p-0">
+                    <form action="">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <b>Cadastre Seu Email para Receber Notificações</b>
+                                </p>
+                            </div>
+                            <div class="col-md-5 col-12">
+                                <div class="mb-4">
+                                    <input type="email" id="form5Example27" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-light mb-4">
+                                    <b>Cadastrar</b>
+                                </button>
+                            </div>
+                       </div>
+                    </form>
+                </div>
+                <div>
+                    <ul class="d-flex gap-5 list-unstyled justify-content-center">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script>
+            function mostrar_modal() {
+                let minha_modal = new bootstrap.Modal(document.getElementById('modal-sobre')).show();
+                minha_modal.show();
+            }
+        </script>
+    </body>
+</html>
